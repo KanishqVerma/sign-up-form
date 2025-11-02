@@ -1,0 +1,171 @@
+@font-face{
+    font-family: "Metal Mania";
+    src: url('../fonts/MetalMania-Regular.woff2') format('woff2'),
+        url('../fonts/MetalMania-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root{
+    --main-bg-color: rgb(15, 16, 20);
+}
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+
+    min-height: 100vh;
+    /* min-width: 100vw; */
+
+    display: flex;
+
+    background-color: var(--main-bg-color);
+    color: white;
+    font-family: Helvetica, sans-serif;
+}
+.left-column{
+    flex: 1;
+    background-image: url(../assets/bg-image.jpg);
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    gap: 2rem;
+}
+.right-column{
+    flex: 2;
+    background-color: #000000;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+.photo-credits, .photo-credits a{
+    font-size: 8px;
+    color: rgb(158, 133, 104);
+}
+.photo-credits a:hover{
+    color: rgb(96, 74, 50)
+}
+.title-label{
+    color: rgba(255, 255, 255, 0.215);
+    font-family: 'Metal Mania', sans-serif;
+    
+
+    background-color: rgba(0, 0, 0, 0.501);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.section-1{
+    background-color: var(--main-bg-color);
+    font-weight: bold;
+    padding: 3em 5em 0.4em 4em;
+    font-size: 1rem;
+
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+}
+.section-2{
+    font-weight: bold;
+    padding: 0 5em 0.4em 4em;
+    width: 100%;
+
+    background-color: var(--main-bg-color);
+
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+.section-3{
+    background-color: var(--main-bg-color);
+    width:100%;
+    padding: 1em 5em 0.4em 4em;
+
+    flex: 1;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+.form-entries{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    font-size: 0.6rem;
+    gap: 1rem;
+}
+.form-row-left label,
+.form-row-right label{
+    display: block;
+    margin-bottom: 8px;
+}
+.form-row-left input,
+.form-row-right input{
+    display: block;
+    margin-bottom: 12px;
+    border-radius: 5px;
+    background-color:#555557;
+    border: 2px solid transparent;
+
+    color: white;
+    padding: 0.4rem;
+}
+.form-row-left input:focus,
+.form-row-right input:focus{
+    border: 2px solid rgb(97, 173, 91);
+    outline: none;
+    box-shadow: 2px 2px 4px green;
+}
+.form-row-left input:user-invalid,
+.form-row-right input:user-invalid{
+    border: 2px solid rgb(170, 59, 59);
+    outline: none;
+    box-shadow: 2px 2px 4px rgb(170, 59, 59);
+}
+.form-column-top,
+.form-column-middle,
+.form-column-bottom{
+    display: flex;
+    gap: 3rem;
+
+}
+form>h3{
+    color: red;
+}
+.submit-button button, 
+.submit-button p{
+    margin-bottom: 12px;
+}
+.submit-button button{
+    font-size: 14px;
+    height: 2rem;
+    width: 10rem;
+    color: white;
+    background-color: rgb(63, 51, 50);
+    border: 2px solid transparent;
+    border-radius: 2px;;
+}
+.submit-button button:hover{
+    background-color: rgb(43, 29, 28);
+}
+.submit-button p{
+    font-size: 12px;
+}
+.submit-button a{
+    color: rgb(116, 95, 93)
+}
+.submit-button a:hover{
+    color: rgb(85, 78, 78)
+}
